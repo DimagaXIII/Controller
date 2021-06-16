@@ -18,7 +18,7 @@ import {
 	KeyboardDatePicker,
 	MuiPickersUtilsProvider,
 } from '@material-ui/pickers'
-import CountrySelect from './MuiAutoComplete'
+import MuiAutoComplete from './MuiAutoComplete'
 
 const theme = createMuiTheme({
 	palette: {
@@ -30,8 +30,8 @@ export default ({ control }) => (
 	<ThemeProvider theme={theme}>
 		<div className='container'>
 			<section>
-				<label>Auto</label>
-				<CountrySelect control={control} />
+				<label>MUI autocomplete</label>
+				<MuiAutoComplete control={control} />
 			</section>
 			<section>
 				<label>MUI Picker</label>
@@ -146,9 +146,9 @@ export default ({ control }) => (
 			</section>
 
 			{/* <section>
-        <label>MUI autocomplete</label>
-        <MuiAutoComplete control={control} />
-      </section> */}
+				<label>MUI autocomplete</label>
+				<MuiAutoComplete control={control} />
+			</section> */}
 		</div>
 	</ThemeProvider>
 )
